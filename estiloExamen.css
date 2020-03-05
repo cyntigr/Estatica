@@ -1,0 +1,132 @@
+@font-face{
+    font-family: Examen;
+    src: url(miFuente.ttf);
+}
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: "Examen";
+    color: white;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#marco{
+    width: 100%;
+    overflow: hidden;
+}
+
+header{
+    background-color: rgb(197, 153, 153);
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+.tipo{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+
+}
+#sprite1, #sprite2, #sprite3{
+    padding-left: 39px;
+    height: 39px;
+    line-height: 40px;
+    background-image: url("img/sprite.jpg");
+    background-repeat: no-repeat;
+    display: inline-block;
+    
+}
+
+#sprites{
+    padding-top: 25px;
+    display: flex;
+}
+#sprite1 {
+    background-position: -78px -39px;
+    
+}
+#sprite2 {
+    background-position: -273px -39px;
+    
+}
+#sprite3 {
+    background-position: -352px -39px;
+    
+}
+
+#menu{
+    display: flex;
+}
+.opcion2, .opcion3, .opcion4{
+    height: 50px;
+    background-color: rgb(73, 71, 71);
+    border-right: solid 0.2px rgb(206, 206, 206);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    width: 100%;
+    
+}
+#opcionOculta{
+    display: none;
+    background-color: rgb(15, 199, 168);
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    font-size: 2em;
+}
+.opcion1{
+    height: 50px;
+    background-color: rgb(73, 71, 71);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    width: 100%;
+}
+#contenedor{
+    background-image: url("img/iescampanillas.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+}
+#ola1{
+    background-image: url("img/wave.svg");
+    width: 120%;
+    height: 200px;
+    position: relative;
+    top: 53%;
+}
+#ola2{
+    background-image: url("img/wave.svg");
+    width: 120%;
+    height: 200px;
+    position: relative;
+    top: 9%;
+}
+@media screen and (max-width: 640px) {
+    #opcionOculta{
+        display: inline;
+    }
+    .opcion2, .opcion3, .opcion4, .opcion1{
+        border-top: solid 0.2px rgb(206, 206, 206);
+    }
+    #menu{
+        transition-duration: 5s;
+        height: 60px;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+    #menu:hover {
+        height: 260px;
+    }
+}

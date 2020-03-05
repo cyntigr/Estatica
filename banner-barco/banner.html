@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css" media="screen">
+        @keyframes animacion {
+            from {
+                left: -174px;
+
+            }
+            to {
+                left: 0px;
+            }
+        }
+
+        @keyframes bird {
+            from {
+                left: 1200px;
+
+            }
+            to {
+                left: -100px;
+            }
+        }
+
+        @keyframes birdArriba {
+            0% {
+                top: 10px;
+            }
+            25% {
+                top: 30px;
+            }
+            50% {
+                top: 10px;
+            }
+            100%{
+                top: 30px;
+            }
+        }
+
+        @keyframes fish {
+            0% {
+                top: 500px;
+  
+            }
+            50% {
+                top: 380px;
+                
+            }
+            100%{
+                top: 500px;
+            }
+        }
+
+        @keyframes interrogacion {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 100;
+            }
+        }
+
+        @keyframes inter {
+            0% {
+                left: 200px;
+                top: 190px;
+            }
+
+            25% {
+                left: 210px;
+                top: 190px;
+            }
+
+            50% {
+                left: 205px;
+                top: 200px;
+            }
+
+            100% {
+                left: 200px;
+                top: 190px;
+            }
+        }
+
+        @keyframes triangulo-barco {
+            0% {
+                left: 0px;
+                top: 250px;
+            }
+
+            25% {
+                left: 10px;
+                top: 230px;
+            }
+
+            50% {
+                left: 5px;
+                top: 250px;
+            }
+
+            100% {
+                left: 0px;
+                top: 230px;
+            }
+        }
+
+        @keyframes ola2 {
+            from {
+                bottom: -11px;
+                right: -94px;
+            }
+
+            to {
+                bottom: 0px;
+                right: -84px;
+            }
+        }
+
+        @keyframes ola1 {
+            from {
+                bottom: 40px;
+            }
+
+            to {
+                bottom: 20px;
+            }
+        }
+
+        @keyframes nube {
+            from {
+                right: 25px;
+
+            }
+
+            to {
+                right: 1013px;
+            }
+        }
+
+        @keyframes texto {
+            from {
+                color: rgba(99, 9, 247 , 0)
+            }
+
+            to {
+                color: rgba(99, 9, 247 , 999);
+            }
+        }
+
+
+        #contenedor {
+            background-image: url("fondo.jpg");
+        }
+
+        #cielo {
+            margin-top: 50px;
+            box-shadow: 0px 0px 5px 3px rgb(122, 122, 122);
+            background-image: url("background.png");
+            width: 80%;
+            height: 500px;
+            background-size: cover;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        #ola2 {
+            background-image: url("agua-frente.png");
+            width: 130%;
+            height: 100px;
+            position: absolute;
+            bottom: -11px;
+            animation-name: ola2;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            animation-direction: alternate;
+
+        }
+
+        #ola1 {
+            background-image: url("agua-fondo.png");
+            width: 130%;
+            height: 75px;
+            position: absolute;
+            bottom: 40px;
+            right: -94px;
+            animation-name: ola1;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            animation-direction: alternate;
+
+        }
+
+        #boat {
+            background-image: url("bote.png");
+            background-repeat: no-repeat;
+            width: 450px;
+            height: 450px;
+            position: absolute;
+            bottom: -200px;
+            animation-name: animacion, triangulo-barco;
+            animation-delay: 0s, 5s;
+            animation-iteration-count: 1, infinite;
+            animation-duration: 5s, 10s;
+            animation-fill-mode: forwards;
+            animation-direction:alternate;
+        }
+
+        #nube1 {
+            width: 200px;
+            height: 200px;
+            background-image: url("nube1.png");
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 15px;
+            right: 600px;
+
+        }
+
+        #nube2 {
+            width: 200px;
+            height: 200px;
+            background-image: url("nube2.png");
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 74px;
+            right: 262px;
+        }
+
+        #nube3 {
+            width: 200px;
+            height: 200px;
+            background-image: url("nube3.png");
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -1px;
+            right: -9px;
+        }
+
+        #nube4 {
+            width: 200px;
+            height: 200px;
+            background-image: url("nube1.png");
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 15px;
+            right: 600px;
+
+        }
+
+        #nube5 {
+            width: 200px;
+            height: 200px;
+            background-image: url("nube2.png");
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 74px;
+            right: 262px;
+        }
+
+        #nube6 {
+            width: 200px;
+            height: 200px;
+            background-image: url("nube3.png");
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -1px;
+            right: -9px;
+        }
+
+        .texto {
+            color: rgba(99, 9, 247, 0);
+            font-size: 4em;
+            position: absolute;
+            top: 91px;
+            right: 111px;
+            text-align: center;
+            font-weight: bold;
+            animation-name: texto;
+            animation-delay: 7s;
+            animation-iteration-count: 1;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+        }
+
+        #interrogacion {
+            background-image: url("interrogacion.png");
+            background-repeat: no-repeat;
+            opacity: 0;
+            width: 50px;
+            height: 50px;
+            top: 190px;
+            left: 200px;
+            position: absolute;
+            animation-name: interrogacion, inter;
+            animation-iteration-count: 1, infinite;
+            animation-delay: 4s, 5s;
+            animation-duration: 2s, 10s;
+            animation-fill-mode: forwards;
+            animation-direction: alternate;
+        }
+        #gaviota{
+            background-image: url("gaviota.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 10px;
+            left: 100px;
+            animation-name: bird, birdArriba;
+            animation-duration: 15s,5s;
+            animation-direction: normal;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            animation-direction:normal, alternate;
+            animation-iteration-count: infinite;
+        }
+
+        #pez{
+            background-image: url("pez.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 500px;
+            left: 500px;
+            animation-name: fish;
+            animation-duration: 5s;
+            animation-direction: normal;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+        }
+
+        .nubes1 {
+            position: absolute;
+            right: 110px;
+        }
+
+        .nubes2 {
+            position: absolute;
+            right: -875px;
+        }
+
+        .nube {
+            position: absolute;
+            right: 25px;
+            animation-name: nube;
+            animation-iteration-count: infinite;
+            animation-duration: 25s;
+            animation-fill-mode: forwards;
+            animation-direction: normal;
+            animation-timing-function: linear;
+        }
+    </style>
+</head>
+
+<body id="contenedor">
+
+    <div id="cielo">
+
+        <div id="gaviota"></div>
+        
+        <div id="barco">
+            <div id="ola1"></div>
+            <div id="boat"></div>
+            <div id="pez"></div>
+            <div id="ola2"></div>
+        </div>
+        <div class="nube">
+            <div class="nubes1">
+                <div id="nube1"></div>
+                <div id="nube2"></div>
+                <div id="nube3"></div>
+            </div>
+            <div class="nubes2">
+                <div id="nube4"></div>
+                <div id="nube5"></div>
+                <div id="nube6"></div>
+            </div>
+        </div>
+        <div id="interrogacion"></div>
+        <div class="texto">Mi segundo<br> Banner con<br> CSS3</div>
+
+    </div>
+
+</body>
+
+</html>

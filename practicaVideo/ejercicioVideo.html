@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Práctica Video Fondo</title>
+<style type="text/css" media="screen">
+
+	*{
+		margin:0;
+		box-sizing: border-box;
+		color: white;
+	}
+
+	#contenedor{
+		position: relative;
+		font-family: verdana;
+	}
+
+	#boton{
+		background-color: rgb(230, 66, 134);
+		width: 100px;
+		height: 40px;
+		border-radius: 50px;
+		text-align: center;
+		padding-top: 8px;
+		margin-top: 20px;
+	}
+
+	#menu{
+		width: 100%;
+		padding-bottom: 20px;
+		padding-top: 20px;
+		padding-right: 250px;
+		padding-left: 250px;
+		position: absolute;
+		background-color: rgba(6, 61, 68, 0.699);
+		font-size: 0.8em;
+
+	}
+	.top{
+		background-color: rgb(53, 52, 52);
+		position: absolute;
+		top: 550px;
+		width: 100%;
+		height: 410px;
+	}
+	#centro{
+		position: absolute;
+		padding-left: 250px;
+		top: 200px;
+		color: white;
+	}
+
+	#cuadro{
+		position: absolute;
+		top: 60px;
+		padding-right: 400px;
+		padding-left: 300px;
+	}
+
+	video{
+		width: 100%;
+		position: absolute;
+	}
+
+	.derecha{
+		float: right;
+	}
+
+	span{
+		padding-right: 8px;
+	}
+	#capaFondo{
+		width: 100%;
+		height: 550px;
+		position: absolute;
+		background-color: rgba(3, 50, 56, 0.774);
+	}
+
+</style>
+</head>
+<body>
+	<div id="contenedor">
+		<video id="video"  muted="muted" autoplay loop>
+			<source src="video.mp4">
+			<source src="video.ogv">
+			<source src="video.webm">
+		</video>
+		<div id="capaFondo"></div>
+		<div id="menu">
+			<span>MENU1</span>
+			<span>MENU2</span>
+			<span>MENU3</span>
+			<span class="derecha" >Login</span>
+			<span class="derecha" >Registro</span>
+		</div>
+		<div id="centro">
+			<h1>PRACTICA 3</h1>
+			<h3>
+				Insertar video de fondo
+			</h3>
+		<div id="boton">Entrar</div>
+		</div>
+		<div class="top">
+			
+			<div id="cuadro">
+				<h1>Cuerpo pagina</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+					sed do eiusmod tempor incididunt ut labore et dolore magna 
+					aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+					ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+					"Velit esse cillum dolore eu fugiat nulla pariatur. 
+					Excepteur sint occasionecat cupidatat non proident, 
+					sunt in culpa qui officia deserunt mollit anim id est laborum".
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+					laboris nisi ut aliquip ex ea commodo consequat. 
+					"Velit esse cillum dolore eu fugiat nulla pariatur. 
+					Excepteur sint occasionecat cupidatat non proident, 
+					sunt in culpa qui officia deserunt mollit anim id est 
+					laborum".Lorem ipsum dolor sit amet, consectetur adipiscing 
+					elit, sed do eiusmod tempor incididunt ut labore et dolore 
+					magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+					ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+					"Velit esse cillum dolore eu fugiat nulla pariatur. 
+					Excepteur sint occasionecat cupidatat non proident, 
+					sunt in culpa qui officia deserunt mollit anim id est laborum".
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

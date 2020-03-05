@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen" type="text/css">
+        @font-face {
+            font-family: Alegreya;
+            src: url(Alegreya-Regular.ttf);
+            font-weight: normal;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url("header.jpg");
+            background-position: top;
+            background-repeat: no-repeat;
+            position: relative;
+            font-family: "Alegreya";
+        }
+
+        #texto {
+            font-size: 3em;
+            color: white;
+            text-align: center;
+            width: 576px;
+            height: 150px;
+            margin-left: 200px;
+            margin-top: 7em;
+            text-transform: uppercase;
+        }
+
+        #cuadroAzul {
+            font-size: 3em;
+            color: white;
+            text-align: center;
+            width: 576px;
+            height: 275px;
+            margin-left: 200px;
+            margin-top: 1em;
+            background-color: rgba(127, 255, 212, 0.692);
+            text-transform: uppercase;
+        }
+
+        .seleccionado {
+            color: black;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        li,
+        ul {
+            margin: 0px;
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+            padding: 0px;
+            display: inline-block;
+            color: white;
+            text-align: center;
+        }
+
+        #navegador {
+            width: 75%;
+            height: 6em;
+            background-color: #63c9eb9d;
+            margin-top: 2em;
+            font-size: 1.4em;
+            margin: auto;
+            font-weight: normal;
+            top: 2em;
+            position: relative;
+        }
+
+        #logotipo {
+            margin-top: 1.3em;
+            display: inline-block;
+            margin-right: 2em;
+            margin-left: 2em;
+        }
+
+        #circulo {
+            background-color: white;
+            color: rgb(94, 94, 94);
+            height: 100px;
+            width: 100px;
+            border-radius: 100px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 100px;
+            margin-left: 27em;
+            margin-top: 2em;
+        }
+        #circulo:hover{
+            background-color: rgb(127, 255, 212);
+            color: rgb(255, 255, 255)!important;
+        }
+
+        #circulo>span {
+            vertical-align: middle;
+            display: inline-block;
+            line-height: normal;
+        }
+
+        .us {
+            margin-left: 29.5em;
+            margin-top: 4em;
+            color: rgb(94, 94, 94);
+        }
+
+        .mayus {
+            font-size: 1.2rem !important;
+        }
+
+        div.mayus {
+            text-transform: uppercase;
+            color: rgb(141, 141, 141);
+            margin-top: 0.5em;
+        }
+        .textoNaranja:hover{
+            color: rgb(209, 83, 37);
+        }
+
+        #parte {
+            font-size: 2em;
+            color: rgb(78, 78, 78);
+            text-align: center;
+            background-color: rgb(248, 248, 248);
+
+        }
+
+        .forma {
+            margin-top: 2em;
+            float: left;
+            width: 300px;
+            height: 300px;
+            border-radius: 200px;
+
+        }
+
+        .una {
+            background-image: url("img1.jpg");
+            background-size: cover;
+        }
+
+        .dos {
+            background-image: url("img2.jpg");
+            background-size: cover;
+        }
+
+        .tres {
+            background-image: url("img3.jpg");
+            background-size: cover;
+        }
+
+        .centrar {
+            display: flex;
+            justify-content: space-around;
+            color: rgb(68, 211, 211);
+            font-size: 1em;
+            margin-top: 1em;
+
+        }
+
+        .welcome {
+            padding-top: 2em;
+            text-transform: uppercase;
+        }
+
+        .parrafo {
+            padding-top: 2em;
+            color: rgb(114, 112, 112);
+            font-size: 0.6em;
+
+        }
+
+        .parra {
+            padding-top: 0.5em;
+            color: rgb(165, 157, 157);
+            font-size: 0.6em;
+        }
+
+        .button {
+            color: white;
+            font-size: 0.5em;
+            display: inline-block;
+            padding-left: 31px;
+            padding-right: 31px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: rgb(68, 211, 211);
+            margin-bottom: 2em;
+        }
+
+        .button:hover {
+            background-color: rgb(43, 43, 43);
+
+        }
+
+        #terceraParte {
+            background-color: white;
+        }
+
+        #tabla {
+            display: table;
+        }
+
+        .contenidos {
+            display: table-row;
+        }
+
+        .columna1 {
+            display: table-cell;
+            height: 220.89px;
+            width: 389.89px;
+            background-image: url("img4.jpg");
+        }
+
+        .columna2 {
+            display: table-cell;
+            height: 220.89px;
+            width: 389.89px;
+            background-image: url("img5.jpg");
+        }
+
+        .columna3 {
+            display: table-cell;
+            height: 220.89px;
+            width: 389.89px;
+            background-image: url("img6.jpg");
+        }
+
+
+        .columna,
+        .columna,
+        .columna {
+            display: table-cell;
+            width: 389.89px;
+            border-bottom: solid 0.2px rgb(206, 206, 206);
+            border-left: solid 0.2px rgb(206, 206, 206);
+            border-right: solid 0.2px rgb(206, 206, 206);
+            height: 173.89px;
+        }
+
+        .title {
+            padding-top: 1.2em;
+            font-size: 0.65em;
+            color: rgb(23, 179, 218);
+        }
+
+        #tabla {
+            margin: auto;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+
+            <div id="navegador">
+                <div id="logotipo"><img src="logo.png" alt=""></div>
+                <ul>
+                    <li class="seleccionado">home</li>
+                    <li>about us</li>
+                    <li>services</li>
+                    <li>blog</li>
+                    <li>contacts</li>
+                </ul>
+            </div>
+            <div id="texto">
+                <p>Home Health Care<br>
+                    for Adults and Seniors</p>
+            </div>
+            <div id="circulo"><span>CONTACT</span></div>
+            <p class="us">US</p>
+
+            <div id="cuadroAzul"><p class="textoNaranja"> Find Trusted, Qualified Caregivers</p>
+                <p class="mayus">
+                    Nertaser berrode srta dolore miseras ameteras<br> nuytasa certerya
+                    sederuytas leriuyses resradaes bytrasas kertuytas.</p>
+            </div>
+        </header>
+    </div>
+    <div id="parte">
+        <div class="welcome">Welcome to our website! </div>
+        <div class="centrar">
+            <div class="forma una">
+            </div>
+
+            <div class="forma dos">
+            </div>
+
+            <div class="forma tres">
+            </div>
+        </div>
+
+        <div class="centrar">
+            <div class="coletilla">Personal Care</div>
+            <div class="coletilla">Monitoring Visits</div>
+            <div class="coletilla">Dementia Care</div>
+        </div>
+        <p class="parrafo">Beasnseq usauntur magni dolores eo qui ratione voluptate msequi nesciuque porro quidolomas
+            felerereta miuase jrease kuytras masertqui<br>
+            dolorem ipsum, quiadesa dolores kytrasas miuyrasa. Derasen sitamet, consectetur adipisci velit, sed quia
+            non numquam eius modi tempora<br>
+            incidunt, ut labore et dolore magnam.</p>
+        <div class="button">
+            MORE
+        </div>
+        <div id="terceraParte">
+            <div class="welcome"> WHAT WE DO</div>
+            <div class="mayus">nertyase bertyeras kerode
+                fertase berros vertyuasa miortyas</div>
+
+            <div id="tabla">
+                <div class="contenidos">
+                    <div class="columna1"></div>
+                    <div class="columna2"></div>
+                    <div class="columna3"></div>
+                </div>
+                <div class="contenidos">
+                    <div class="columna">
+                        <div class="title">MERTAS VERONAS VEROS</div>
+                        <p class="parra">
+                            Beasnseq usauntur madolores eosera ratione voluptate msequi.</p>
+                    </div>
+                    <div class="columna">
+                        <div class="title">DOLOERTAS KIRTASE BERRO</div>
+                        <p class="parra">
+                            Meruytas ados eosera ratione voluptate casequi masnseq</p>
+                    </div>
+                    <div class="columna">
+                        <div class="title">MIUYSE NUYGASE FERRODE</div>
+                        <p class="parra">
+                            Meruytas ados eosera ratione voluptate casequi masnseq</p>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                MORE
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
